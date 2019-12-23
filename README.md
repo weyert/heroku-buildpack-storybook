@@ -1,6 +1,7 @@
 ## `heroku-buildpack-storybook`
 
-This buildpack builds storybook using `yarn` and is meant to be used before `https://github.com/heroku/heroku-buildpack-static.git`.
+This build pack builds storybook using `yarn` and is meant to be used before `https://github.com/heroku/heroku-buildpack-static.git`.
+We are assuming that you have a script command `storybook:build`
 
 If you are using an `app.json`, it might look something like this:
 
