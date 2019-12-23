@@ -1,0 +1,14 @@
+#!/bin/sh
+
+BUILD_DIR=$1
+
+cd $BUILD_DIR
+
+if [ -f "static.json" ]
+then
+  echo '       Overwriting existing `static.json`'
+fi
+
+echo '{ "root": "other/public/storybook/" }' > static.json
+
+yarn run storybook:build
