@@ -1,8 +1,9 @@
 #!/bin/sh
 
 if [ -d $1/.storybook ]; then
-  echo "Storybook"
+  echo "-----> Storybook detected"
   exit 0
 else
+  echo "-----> No Storybook detected"
   exit 1
 fi
